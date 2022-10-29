@@ -1,0 +1,43 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /Users/xuxiangxiao/Documents/enmonster.nosync/cache/datasets/word
+train: images/train  # train images (relative to 'path')
+val: images/train  # val images (relative to 'path')
+test:  # test images (optional)
+
+# Classes
+nc: 32  # number of classes
+ # class names
+names:
+  0: four
+  1: zd
+  2: zb
+  3: zl
+  4: zv
+  5: zq
+  6: zp
+  7: five
+  8: zu
+  9: zf
+  10: one
+  11: zn
+  12: six
+  13: seven
+  14: three
+  15: zr
+  16: zk
+  17: zw
+  18: nine
+  19: eight
+  20: ze
+  21: zm
+  22: zg
+  23: zj
+  24: zx
+  25: zh
+  26: zs
+  27: zy
+  28: za
+  29: two
+  30: zt
+  31: zc
+  32: zz

@@ -1,0 +1,15 @@
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: C:\Users\jack\Desktop\work\datasets\ow
+train: images\train  # train images (relative to 'path')
+val: images\train  # val images (relative to 'path')
+test:  # test images (optional)
+
+# Classes
+nc: 5  # number of classes
+ # class names
+names:
+  0: head
+  1: other_body
+  2: maikelei
+  3: baolei
+  4: xingxing

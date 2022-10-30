@@ -371,5 +371,7 @@ For YOLOv5 bugs and feature requests please visit [GitHub Issues](https://github
 
 ```bash
 python .\train.py --data .\data\word.yaml  --weights yolov5s.pt --workers 12 --batch-size -1
+python .\train.py --data .\data\ow.yaml  --weights yolov5s.pt --workers 30 --batch-size 30
 python .\detect.py --weights .\runs\train\exp\weights\best.pt --source ..\datasets\word\images\val
+python .\detect.py --weights .\runs\train\exp5\weights\best.pt --source ..\datasets\val\aaa.mp4
 ```

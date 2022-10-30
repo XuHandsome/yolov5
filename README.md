@@ -367,3 +367,9 @@ For YOLOv5 bugs and feature requests please visit [GitHub Issues](https://github
 
 [assets]: https://github.com/ultralytics/yolov5/releases
 [tta]: https://github.com/ultralytics/yolov5/issues/303
+
+
+```bash
+python .\train.py --data .\data\word.yaml  --weights yolov5s.pt --workers 12 --batch-size -1
+python .\detect.py --weights .\runs\train\exp\weights\best.pt --source ..\datasets\word\images\val
+```

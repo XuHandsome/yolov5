@@ -46,6 +46,16 @@ model = torch.hub.load('C:\\Users\\jack\\Desktop\\work\\yolov5', 'custom', weigh
 # 这里是定义屏幕宽高[其实这俩就是游戏所对应的分辨率，比如：游戏里1920*1080这里就是1920*1080]
 game_width = 1600
 game_height = 930
+
+# 置信度阀值
+model.conf = 0.25
+# 自动混合精度推理
+model.amp = True
+# 一个box里多个标签
+model.multi_label = True
+# 指定labels number ,训练用的yaml里定义的每个label number对应的标签
+model.classes = 0,1
+
 # 这边就是开始实时进行游戏窗口推理了
 #无限循环 -> 截取屏幕 -> 推理模型获取到每个敌人坐标 -> 计算每个敌人中心坐标 -> 挑选距离准星最近的敌人 -> 如果左键是按下状态则控制鼠标移动到敌人的身体或者头部(本文计算方式是移动到头部)
 while True:

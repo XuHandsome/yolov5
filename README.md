@@ -375,3 +375,7 @@ python .\train.py --data .\data\ow.yaml  --weights yolov5s.pt --workers 30 --bat
 python .\detect.py --weights .\runs\train\exp\weights\best.pt --source ..\datasets\word\images\val
 python .\detect.py --weights .\runs\train\exp5\weights\best.pt --source ..\datasets\val\aaa.mp4
 ```
+
+```bash
+python .\train.py --data .\data\ow.yaml  --cfg .\models\ow.yaml --weights yolov5s.pt --imgsz 1080 --quad --image-weights --multi-scale --label-smoothing 0.0 --workers 30 --batch-size -1
+```
